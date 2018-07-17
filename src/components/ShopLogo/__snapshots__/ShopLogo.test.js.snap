@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Should render shop's logo image 1`] = `
+<a
+  className="WithTracking-Link--link-1"
+  href="/"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="link"
+  tabIndex={0}
+  tracking={
+    Object {
+      "getTrackingData": [Function],
+      "trackEvent": [Function],
+    }
+  }
+>
+  <img
+    alt="Reaction"
+    src="logo.png"
+  />
+</a>
+`;
+
+exports[`Should render the shop's name 1`] = `
+<a
+  className="WithTracking-Link--link-1"
+  href="/"
+  onClick={[Function]}
+  onKeyDown={[Function]}
+  role="link"
+  tabIndex={0}
+  tracking={
+    Object {
+      "getTrackingData": [Function],
+      "trackEvent": [Function],
+    }
+  }
+>
+  Reaction
+</a>
+`;
