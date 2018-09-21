@@ -65,12 +65,12 @@ app
     // This endpoint handles OAuth2 requests (exchanges code for token)
     server.get("/callback", passport.authenticate("oauth2"), (req, res) => {
       // After success, redirect to the page we came from originally
-      res.redirect(req.session.redirectTo);
+      res.redirect(req.session.redirectTo || "/");
     });
 
     server.get("/logout", (req, res) => {
       req.logout();
-      res.redirect(req.get("Referer"));
+      res.redirect(req.get("Referer") || "/");
     });
 
     // Setup next routes
